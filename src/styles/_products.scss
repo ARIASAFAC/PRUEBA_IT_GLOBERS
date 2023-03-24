@@ -1,0 +1,255 @@
+$height: 500px;
+
+@mixin imagen{
+    padding: 0px;
+    margin: auto;
+    margin-top: 10%;
+    display: block;
+    width: 30%;
+    height: 30%;
+  }
+
+@mixin titulo{
+    text-align: center;
+    display: block;
+  }
+
+@mixin hr{
+    width: 40px;
+    display: block;
+  }
+
+  @mixin p{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 1.2rem 0;
+    line-height: 1.5;
+  }
+  @mixin a{
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    letter-spacing: 0.5px;
+    margin: 20px 0;
+    color: #fff;
+    color: black;
+
+  }
+//RAIN
+.products1{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+  .pRain{
+    width: 100%;
+    height: $height;
+    .Rain{
+      width: 100%;
+      height: 100%;
+    }
+    flex: 1 50%;
+    // POLYGON IZQUIERDA
+    clip-path: polygon(100% 0, 100% 48%, 98% 50%, 100% 52%, 100% 100%, 0 100%, 0 0);
+  }
+  .pRain2{
+    width: 100%;
+    height: $height;
+    background-color: #ffffff;
+    flex: 2 50%;
+    .Rain2{
+      @include imagen;
+    }
+    .titulo{
+      @include titulo;
+  
+    }
+    .hr{
+      @include hr;
+    }
+    .p{
+      @include p;
+    }
+    .a{
+      @include a;
+    }
+  }
+  
+}
+@media (max-width: 768px) {
+  .products1{
+    flex-wrap:wrap-reverse;
+    .pRain{
+      flex: 1 100%;
+      //POLYGON ABAJO
+      clip-path: polygon(50% 2%, 52% 0, 100% 0, 100% 100%, 0 100%, 0 0, 48% 0);
+    }
+    .pRain2{
+      flex: 2 100%;
+    }
+  }
+}
+//PUFF
+.products2{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+  .pPuff{
+    width: 100%;
+    height: $height;
+    .Puff{
+      width: 100%;
+      height: 100%;
+    }
+    flex: 1 50%;
+    //POLTGON DERECHA
+    clip-path: polygon(0 48%, 0 0, 100% 0, 100% 100%, 0 100%, 0 52%, 2% 50%);  }
+  .pPuff2{
+    width: 100%;
+    height: $height;
+    background-color: #ffffff;
+    flex: 2 50%;
+    .Puff2{
+      @include imagen;
+    }
+    .titulo{
+      @include titulo;
+  
+    }
+    .hr{
+      @include hr;
+    }
+    .p{
+      @include p;
+    }
+    .a{
+      @include a;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .products2{
+    .pPuff{
+      flex: 2 0 100%;
+      clip-path: polygon(50% 2%, 52% 0, 100% 0, 100% 100%, 0 100%, 0 0, 48% 0);
+
+    }
+    .pPuff2{
+      flex: 1 0 100%;
+    }
+  }
+}
+//CART
+.products3{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+  .pCart{
+    width: 100%;
+    height: $height;
+    .Cart{
+      width: 100%;
+      height: 100%;
+    }
+    flex: 1 0 50%;
+    clip-path: polygon(100% 0, 100% 48%, 98% 50%, 100% 52%, 100% 100%, 0 100%, 0 0);
+  }
+  .pCart2{
+    width: 100%;
+    height: $height;
+    background-color: #ffffff;
+    flex: 2 0 50%;
+    .Cart2{
+      @include imagen;
+    }
+    .titulo{
+      @include titulo;
+  
+    }
+    .hr{
+      @include hr;
+    }
+    .p{
+      @include p;
+    }
+    .a{
+      @include a;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .products3{
+        flex-wrap:wrap-reverse;
+    .pCart{
+      flex: 2 0 100%;
+      clip-path: polygon(50% 2%, 52% 0, 100% 0, 100% 100%, 0 100%, 0 0, 48% 0);
+
+    }
+    .pCart2{
+      flex: 1 0 100%;
+    }
+  }
+}
+//NAP
+.products4{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+  .pNap{
+    width: 100%;
+    height: $height;
+    .Nap{
+      width: 100%;
+      height: 100%;
+
+    }
+    flex: 1 0 50%;
+    clip-path: polygon(0 48%, 0 0, 100% 0, 100% 100%, 0 100%, 0 52%, 2% 50%);
+  }
+  .pNap2{
+    width: 100%;
+    height: $height;
+    background-color: #ffffff;
+    flex: 2 0 50%;
+    .Nap2{
+      @include imagen;
+    }
+    .titulo{
+      @include titulo;
+  
+    }
+    .hr{
+      @include hr;
+    }
+    .p{
+      @include p;
+    }
+    .a{
+      @include a;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .products4{
+    .pNap{
+      flex: 2 0 100%;
+      clip-path: polygon(50% 2%, 52% 0, 100% 0, 100% 100%, 0 100%, 0 0, 48% 0);
+
+    }
+    .pNap2{
+      flex: 1 0 100%;
+    }
+  }
+}
+
+.insta{
+  color: grey;
+  text-align: center;
+  margin: 10% 0 0;
+}
+.hashtag{
+  text-align: center;
+    font-size: 3rem;
+    margin: 2% 0 10%;
+    font-weight: 100;
+}

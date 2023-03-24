@@ -1,0 +1,168 @@
+*{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+.navbar{
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0px 0px 0px 5px;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 1px;
+  z-index: 10000;
+  align-items: center;
+  justify-content: space-between;
+  h1 {
+    font-size: 3rem;
+      font-weight: 1000;
+      color: #fff;
+      span{
+      font-weight: bold;
+      }
+    }
+    span{
+      color: #fff;
+    }
+
+  a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+  }  
+}
+
+.icon{
+  position: absolute;
+  top: -200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  li{
+    display: inline-block;
+  }
+  .hr{
+    height: 60px;
+    display: inline-block;
+  }
+  a{
+    color: white;
+    display: block;
+  }
+  @media (min-width: 768px){
+    
+    position: initial;
+    margin: 0;
+    a{
+      font-size: 1rem;
+      color: white;
+      display: inline;
+    }
+  }
+}
+
+.icon.active{
+  background-color: black;
+  width: 100%;
+  height: 100000%;
+  display: block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 120px;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  li{
+    display: block;
+  }
+  .hr{
+    width: 200px;
+    height: 0px;
+    display: block;
+  }
+  a{
+    color: rgb(252, 252, 252);
+  }
+  .iconn{
+    display: inline-block;
+    margin: auto;
+    width: 100px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px; 
+  }
+}
+
+.icon2{
+  position: absolute;
+  top: -100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  a{
+    font-size: 2rem;
+    color: white;
+    display: block;
+  }
+  @media (min-width: 768px){
+    position: initial;
+    margin: 0;
+    a{
+      font-size: 1rem;
+      color: white;
+      display: inline;
+    }
+  }
+}
+
+.icon2.active{
+  background-color: black;
+  margin-top: 200px;
+  width: 100%;
+  height: 650px;
+  display: block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 330%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 3;
+  li{
+    line-height: 3;
+    display: block;
+  }
+  a{
+    color: rgb(252, 252, 252);
+  }
+  .iconn{
+    display: block;
+    width: 100px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px; 
+  }
+}
+
+.icon-burguer{
+  @media (min-width: 768px) {
+    display: none;
+    padding: 0px 0px 20px 0px;
+  }
+}
+
+.iconn{
+  display: block;
+  width: 45%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 10px; 
+}

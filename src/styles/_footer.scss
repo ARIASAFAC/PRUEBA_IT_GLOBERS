@@ -1,0 +1,22 @@
+.section__padding{
+	padding: 4rem 4rem;
+}
+.footer{
+  background-color: aquamarine;
+}
+.ft{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.ft1{
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+flex-direction: row;
+flex-wrap: wrap;
+width: 100%;
+text-align: left;
+margin-bottom: 2rem;
+}
