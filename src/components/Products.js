@@ -5,11 +5,13 @@ function Products (){
     <div className="container">
       <div className="products1">
         <div className ="pRain">
+          
           <img  
             src={require('../images/Rain.png')}
             alt='Rain'
             className="Rain"
           />
+          <p>hola</p>
         </div>
         <div className ="pRain2">
         <img  
